@@ -2,7 +2,7 @@ const cacheName = 'cache-insects';
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      return cache.addAll(['/', '/insects/index.html', 'butterflies.jpg']);
+      return cache.addAll(['/', 'index.html', 'butterflies.jpg']);
     })
   );
 });
